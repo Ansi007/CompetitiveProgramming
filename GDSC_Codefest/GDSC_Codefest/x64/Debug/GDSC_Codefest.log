@@ -1,1 +1,3 @@
-﻿
+﻿  Source.cpp
+F:\Competitive Programming\GDSC_Codefest\GDSC_Codefest\Source.cpp(55,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  GDSC_Codefest.vcxproj -> F:\Competitive Programming\GDSC_Codefest\x64\Debug\GDSC_Codefest.exe
