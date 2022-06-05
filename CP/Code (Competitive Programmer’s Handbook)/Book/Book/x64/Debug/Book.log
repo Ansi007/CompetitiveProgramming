@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Anns\Desktop\CompetitiveProgramming\CP\Code (Competitive Programmer’s Handbook)\Book\Book\Source.cpp(39,7): warning C4215: nonstandard extension used: long float
+C:\Users\Anns\Desktop\CompetitiveProgramming\CP\Code (Competitive Programmer’s Handbook)\Book\Book\Source.cpp(40,7): warning C4215: nonstandard extension used: long float
+  Book.vcxproj -> C:\Users\Anns\Desktop\CompetitiveProgramming\CP\Code (Competitive Programmer’s Handbook)\Book\x64\Debug\Book.exe
