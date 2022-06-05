@@ -2,6 +2,7 @@
 #include<stdint.h>
 #include<cstdint>
 #include<vector>
+using namespace std;
 
 //Shortening Codes
 typedef long long ll;
@@ -16,9 +17,8 @@ typedef vector<string> vs;
 #define REP(i,a,b) for (int i = a; i <= b; i++)
 
 
-using namespace std;
 
-
+int fictorial(int i);
 
 struct MyStruct
 {
@@ -58,22 +58,55 @@ int main() {
 
 	//Comparing Float Numbers
 	
-	long float a = 0.0000000000000001;
-	long float b = 0.0000000000000001;
-	if (abs(a - b) < 1e-9) {
-		cout << "Equal" << endl;
-	}
+	//long float a = 0.0000000000000001;
+	//long float b = 0.0000000000000001;
+	//if (abs(a - b) < 1e-9) {
+	//	cout << "Equal" << endl;
+	//}
 
 
 	//Macros
 
-	vi myVector;
-	MS ms;
-	myVector.PB(ms.First);
-	myVector.PB(ms.Second);
+	//vi myVector;
+	//MS ms;
+	//myVector.PB(ms.First);
+	//myVector.PB(ms.Second);
 
-	REP(i, 0, 10) {
-		cout << i << endl;
-	}
+	//REP(i, 0, 10) {
+	//	cout << i << endl;
+	//}
+
+	// Mathematics
+
+	// Arithmetic Progression
+	// Geometric Progression
+	// Harmonic Sequence
+
+	cout << fictorial(3) << endl;
 	return 0;
+}
+
+
+int fictorial(int i) {
+	//takes i return i!
+	//but recursively
+	if (i <= 0) {
+		return 1;
+	}
+	else {
+		return i * fictorial(i - 1);
+	}
+}
+
+int fibonacci(int i) {
+
+	if (i <= 0) {
+		return 0;
+	}
+	else if (i == 1) {
+		return 0;
+	}
+	else {
+		return fibonacci(i - 1) + fibonacci(i - 2);
+	}
 }
