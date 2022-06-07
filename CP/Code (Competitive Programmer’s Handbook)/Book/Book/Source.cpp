@@ -167,6 +167,19 @@ int main() {
 		cout << i.x << " ";
 	}
 	cout << endl;
+
+	int n = 9;
+	int a = 0, b = n - 1;
+	int x = 3;
+	while (a <= b) {
+		int k = (a + b) / 2;
+		if (arr[k] == x) {
+			cout << "FOUND: " << x << endl;
+			break;
+		}
+		if (arr[k] > x) b = k - 1;
+		else a = k + 1;
+	}
 	return 0;
 }
 
