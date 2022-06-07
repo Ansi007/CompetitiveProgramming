@@ -2,6 +2,7 @@
 #include<stdint.h>
 #include<cstdint>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 //Shortening Codes
@@ -85,7 +86,24 @@ int main() {
 
 	//cout << fictorial(3) << endl;
 
-
+	vector<int> myV = {5,10,3,2,1,5,6,9,11};
+	int arr[] = { 5,10,3,2,1,5,6,9,11 };
+	string s = "MMONKEY";
+	sort(myV.begin(), myV.end());
+	for (int i : myV) {
+		cout << i << " ";
+	}
+	cout << endl;
+	sort(arr, arr + 9);
+	for (int i : arr) {
+		cout << i << " ";
+	}
+	cout << endl;
+	sort(s.begin(),s.end());
+	for (char i : s) {
+		cout << i;
+	}
+	cout << endl;
 	return 0;
 }
 
