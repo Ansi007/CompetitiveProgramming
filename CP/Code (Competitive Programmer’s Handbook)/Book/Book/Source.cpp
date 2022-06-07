@@ -104,6 +104,32 @@ int main() {
 		cout << i;
 	}
 	cout << endl;
+	vector<pair<int, int>> pairedVector;
+	pair<int, int> p;
+	p.first = 3;
+	p.second = 10;
+	pairedVector.push_back({ 1,2 });
+	pairedVector.push_back({ 10,2 });
+	pairedVector.push_back({ 3,3 });
+	pairedVector.push_back({ 4,2 });
+	pairedVector.push_back({ 11,2 });
+	pairedVector.push_back(p);
+	sort(pairedVector.begin(), pairedVector.end());
+	for (pair<int, int> x : pairedVector) {
+		cout << "{" << x.first << "," << x.second << "}" << endl;
+	}
+
+	//vector<tuple<int, int,int>> tupleVector;
+	//tupleVector.push_back({ 2,1,4 });
+	//tupleVector.push_back({ 10,2 });
+	//tupleVector.push_back({ 3,3 });
+	//tupleVector.push_back({ 4,2 });
+	//tupleVector.push_back({ 11,2 });
+	//tupleVector.push_back(p);
+	//sort(tupleVector.begin(), tupleVector.end());
+	//for (pair<int, int> x : tupleVector) {
+	//	cout << "{" << x.first << "," << x.second << "}" << endl;
+	//}
 	return 0;
 }
 
