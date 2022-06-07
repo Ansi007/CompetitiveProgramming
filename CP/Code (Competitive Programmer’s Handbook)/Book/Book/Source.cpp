@@ -28,6 +28,27 @@ using namespace std;
 //};
 //typedef MyStruct MS;
 
+
+struct MyStruct {
+	int x;
+	bool operator < (const MyStruct& m) {
+		return x < m.x;
+	}
+};
+
+struct MyStruct2 {
+	int x, y;
+	bool operator < (const MyStruct2& m) {
+		if (x != m.x) return x < m.x;
+		else return y < m.y;
+	}
+};
+
+bool comp(string a, string b) {
+	if (a.size() != b.size()) return a.size() < b.size();
+	return a < b;
+} //Custom Function of sorting
+
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
@@ -130,6 +151,22 @@ int main() {
 	//for (pair<int, int> x : tupleVector) {
 	//	cout << "{" << x.first << "," << x.second << "}" << endl;
 	//}
+
+	vector<MyStruct> mS;
+	MyStruct myStruct;
+	myStruct.x = 10;
+	mS.push_back(myStruct);	myStruct.x = 11;
+	mS.push_back(myStruct);	myStruct.x = 1;
+	mS.push_back(myStruct);	myStruct.x = 30;
+	mS.push_back(myStruct);	myStruct.x = 0;
+	mS.push_back(myStruct);	myStruct.x = 20;
+	mS.push_back(myStruct);	myStruct.x = 110;
+	mS.push_back(myStruct);
+	sort(mS.begin(), mS.end());
+	for (auto i : mS) {
+		cout << i.x << " ";
+	}
+	cout << endl;
 	return 0;
 }
 
