@@ -5,26 +5,27 @@
 using namespace std;
 
 //Shortening Codes
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<string> vs;
-
-#define F first
-#define S second
-#define PB push_back
-#define MP make_pair
-
-#define REP(i,a,b) for (int i = a; i <= b; i++)
-
-
-
-int fictorial(int i);
-
-struct MyStruct
-{
-	string First, Second;
-};
-typedef MyStruct MS;
+//typedef long long ll;
+//typedef vector<int> vi;
+//typedef vector<string> vs;
+//
+//#define F first
+//#define S second
+//#define PB push_back
+//#define MP make_pair
+//
+//#define REP(i,a,b) for (int i = a; i <= b; i++)
+//
+//
+//
+//int fictorial(int i);
+//int fibonacci(int i);
+//
+//struct MyStruct
+//{
+//	string First, Second;
+//};
+//typedef MyStruct MS;
 
 int main() {
 	ios::sync_with_stdio(0);
@@ -82,31 +83,33 @@ int main() {
 	// Geometric Progression
 	// Harmonic Sequence
 
-	cout << fictorial(3) << endl;
+	//cout << fictorial(3) << endl;
+
+
 	return 0;
 }
 
 
-int fictorial(int i) {
-	//takes i return i!
-	//but recursively
-	if (i <= 0) {
-		return 1;
-	}
-	else {
-		return i * fictorial(i - 1);
-	}
-}
-
-int fibonacci(int i) {
-
-	if (i <= 0) {
-		return 0;
-	}
-	else if (i == 1) {
-		return 0;
-	}
-	else {
-		return fibonacci(i - 1) + fibonacci(i - 2);
-	}
-}
+//int fictorial(int i) {
+//	//takes i return i!
+//	//but recursively
+//	if (i <= 0) {
+//		return 1;
+//	}
+//	else {
+//		return i * fictorial(i - 1);
+//	}
+//}
+//
+//int fibonacci(int i) {
+//
+//	if (i <= 0) {
+//		return 0;
+//	}
+//	else if (i == 1) {
+//		return 0;
+//	}
+//	else {
+//		return fibonacci(i - 1) + fibonacci(i - 2);
+//	}
+//}
